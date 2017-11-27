@@ -1,0 +1,9 @@
+{
+    "author_name": "Kitware Inc",
+    "email": "kitware@kitware.com",
+    "plugin_name": "GW Task Plugin",
+    "plugin_slug": "{{ cookiecutter.plugin_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "plugin_short_description": "Boilerplate for creating a Girder Worker Task plugin",
+    "version": "0.0.0",
+    "open_source_license": ["Apache Software License 2.0", "MIT license", "BSD license", "ISC license", "GNU General Public License v3", "Not open source"]
+}
