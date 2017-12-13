@@ -19,7 +19,7 @@ setup(name='{{ cookiecutter.plugin_slug }}',
       author='{{ cookiecutter.author_name }}',
       author_email='{{ cookiecutter.email }}',
 {%- if cookiecutter.open_source_license in license_classifiers %}
-      license="{{ cookiecutter.open_source_license }}",
+      license='{{ cookiecutter.open_source_license }}',
 {%- endif %}
       classifiers=[
           'Development Status :: 2 - Pre-Alpha',
@@ -32,17 +32,17 @@ setup(name='{{ cookiecutter.plugin_slug }}',
           'Programming Language :: Python'
       ],
       install_requires=[
-          "girder_worker",
-          "girder_worker_utils"
+          'girder_worker',
+          'girder_worker_utils'
           # TODO: Add additional packages required by both
           # producer and consumer side installations
       ],
       extras_require={
-          "girder": [
+          'girder': [
               # TODO: Add dependencies here that are required for the
               # package to work on the producer (Girder) side.
           ],
-          "worker": [
+          'worker': [
               # TODO: Add dependencies here that are required for the
               # package to work on the consumer (Girder Worker) side.
           ]
